@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body onload="renderListnhanvien()">
+    <div id="menu">
+      <ul class="root">
+        <li><a href=" https://hoquocbao1804.github.io/-Requirement/">REQUIREMENT</a></li>
+        <li><a href="https://hoquocbao1804.github.io/Design/">DESIGN</a></li>
+        <li><a href="https://hoquocbao1804.github.io/IMPLEMENT/">IMPLEMENT</a></li>
+      </ul>
+    </div>
+    <div>
+      
+      
+      <div class="head"><input type="text" id="search" oninput=" searchNhanvien()" placeholder="Tìm kiếm..."> </div>
+      <div class="form_nhanvien">
+          <h3>Thông Tin Nhân Viên </h3>
+          <label >Họ và Tên </label>
+          <input type="text" id="fullname"/>
+          <span id="fullname-error" class="error"></span>
+          <br>
+  
+          <label >địa chỉ email  </label>
+          <input type="text" id="email">
+          <span id="email-error" class="error"></span>
+          <br>
+          <label >số điện thoại </label>
+          <input type="text" id="phone">
+          <span id="phone-error" class="error"></span>
+  
+          <br>
+          <label >địa chỉ  </label>
+          <input type="text" id="address">
+          <span id="address-error" class="error"></span>
+  
+          <br>
+          <label >giới tính  </label>
+          <input type="radio" name="gender" id="male" value="1"> Nam
+          <input type="radio" name="gender" id="famale" value="2"> Nữ
+          <span id="gender-error" class="error"></span>
+  
+          <br>
+  
+          <label > &nbsp;   </label>
+          
+          <button onclick="save()"> Thêm </button>
+          
+      </div>
+      <div class="list_nhanvien" , id="list_nhanvien">
+          <h3>Danh sách nhân viên </h3>
+  
+          <table id="grid-nhanvien" width="600px" border="1" cellpadding = "0" cellpadding="0">
+              <tr>
+                  <td>Họ và Tên </td>
+                  <td>Email</td>
+                  <td>Điện Thoại</td>
+                  <td>Địa Chỉ </td>
+                  <td> giới tính </td>
+                  <td>Hành Động </td>
+              </tr>
+          </table>
+      </div>
+      
+      
+      <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+      <script src="js.js"></script>
+      
+    </div>
+    
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,91 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+   font-size:18px;
+}
+#menu{
+  height: 50px;
+  background: #b5b5b5;
+  position: fixed;
+  top:0 ;
+  left: 0;
+  border-bottom: 1px solid ;
+  border-radius: 8px;
+  
+}
+
+ul.root li{
+  list-style: none;
+  float: left; 
+
+}
+ul.root li a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 20px 0 20px ;
+  line-height: 50px;
+  display :inline-block;
+  position: relative;;
+}
+ul.root li a:hover {
+  background: orange;
+  color:red;
+  transition: ease-in 0.40s;
+  -moz-animation: ease-in 0.40s;
+  -webkit-transition: ease-in 0.40s;
+}
+ul.root li a:before{
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: black;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: none;
+
+}
+/* ul.root li:hover a:before{
+  display: block;
+} */
+
+.head{
+  margin: 90px 0 0 30px;
+
+}
+div.form_nhanvien, div.list_nhanvien{
+  width : 550px;
+  border: 1px solid #ccc;
+  margin: 25px;
+  margin-top: 80px;
+
+  padding:10px ;
+  float:left;
+
+}
+div.list_nhanvien{
+  width:600px;
+}
+.h3{
+  padding: 0px;
+  margin-top:0px;
+
+}
+div.form_nhanvien label{
+  width: 100px;
+  float: left;
+}
+/* [type = "text " ] là loại bỏ các nút button */
+div.form_nhanvien input[type="text"], button {
+  margin-bottom:10px;
+  width:200px;
+  padding: 5px;
+}
+button{
+  margin-top: 15px;
+}
+.error{
+  color:RED;
+}
